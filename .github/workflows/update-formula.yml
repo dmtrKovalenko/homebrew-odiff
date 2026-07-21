@@ -1,0 +1,26 @@
+name: Update formula
+
+on:
+  # Poll upstream for new releases every hour.
+  schedule:
+    - cron: "17 * * * *"
+  # Allow triggering immediately after cutting a release.
+  workflow_dispatch:
+
+# Only run on the canonical tap repo, never on forks.
+permissions:
+  contents: write
+
+jobs:
+  update:
+    if: github.repository == 'dmtrKovalenko/homebrew-odiff'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout tap
+        uses: actions/checkout@v4
+
+      - name: Sync formula with latest upstream release
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          UPSTREAM_REPO: dmtrKovalenko/odiff
+        run: ./scripts/update-formula.sh
