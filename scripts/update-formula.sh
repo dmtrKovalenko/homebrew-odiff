@@ -130,7 +130,7 @@ echo "Wrote $FORMULA for version $version."
 # ---------------------------------------------------------------------------
 # 5. Commit and push if something actually changed.
 # ---------------------------------------------------------------------------
-if git diff --quiet -- "$FORMULA"; then
+if [ -z "$(git status --porcelain -- "$FORMULA")" ]; then
   echo "No changes to commit."
   exit 0
 fi
