@@ -5,28 +5,28 @@
 class Odiff < Formula
   desc "The fastest pixel-by-pixel image visual-difference tool"
   homepage "https://github.com/dmtrKovalenko/odiff"
-  version "4.4.4"
+  version "4.5.0"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/dmtrKovalenko/odiff/releases/download/v4.4.4/odiff-macos-x64"
-      sha256 "97be4fed8e265fe8ea4e531ce8f33a5e2140aee741041f2b0bb71d5e3573f2ca"
+      url "https://github.com/dmtrKovalenko/odiff/releases/download/v4.5.0/odiff-macos-x64"
+      sha256 "73e565e2a777b653fa0ceb90c138dec1c396c990913fdc1221fe8b01fa70c171"
     end
     on_arm do
-      url "https://github.com/dmtrKovalenko/odiff/releases/download/v4.4.4/odiff-macos-arm64"
-      sha256 "613f304d9408bd5fb99d0e678a67d8401b51358631869c596ddb42b3732d0bb1"
+      url "https://github.com/dmtrKovalenko/odiff/releases/download/v4.5.0/odiff-macos-arm64"
+      sha256 "3c681171c158f95e7e62d636ddd00c33e8f971c23c85239c6192b72d76ad665b"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/dmtrKovalenko/odiff/releases/download/v4.4.4/odiff-linux-x64"
-      sha256 "4f1768963b9583c0eb764555f1629f164a901fe47317ed581a908b4ddec6eb43"
+      url "https://github.com/dmtrKovalenko/odiff/releases/download/v4.5.0/odiff-linux-x64"
+      sha256 "2eb5a7f44df925d93b451898de8bf213f0aac270a9781187746097ed7cd45324"
     end
     on_arm do
-      url "https://github.com/dmtrKovalenko/odiff/releases/download/v4.4.4/odiff-linux-arm64"
-      sha256 "2b72b9b536d9168106d336526413ea8abad07e422a261b3da2ec1ada4cc15f03"
+      url "https://github.com/dmtrKovalenko/odiff/releases/download/v4.5.0/odiff-linux-arm64"
+      sha256 "245ad45851da200cfdd361374618fca22781919faaca255aed1c93b883beb476"
     end
   end
 
